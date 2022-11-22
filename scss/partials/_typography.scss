@@ -80,3 +80,23 @@ hr {
     padding: 0 0 .5em 0;
     margin: 1em auto 3em auto;
 }
+
+/* FONT FACE */
+
+@font-face {
+    font-family: 'Janda Manatee Solid';
+    src: url('fonts/JandaManateeSolid.eot');
+    src: url('fonts/JandaManateeSolid.eot?#iefix') format('embedded-opentype'),
+        url('fonts/JandaManateeSolid.woff2') format('woff2'),
+        url('fonts/JandaManateeSolid.woff') format('woff'),
+        url('fonts/JandaManateeSolid.ttf') format('truetype'),
+        url('fonts/JandaManateeSolid.svg#JandaManateeSolid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hero h1 {
+    font-family: 'Janda Manatee Solid';
+    text-transform: uppercase;
+}

@@ -113,6 +113,20 @@ hr {
   margin: 1em auto 3em auto;
 }
 
+/* FONT FACE */
+@font-face {
+  font-family: "Janda Manatee Solid";
+  src: url("fonts/JandaManateeSolid.eot");
+  src: url("fonts/JandaManateeSolid.eot?#iefix") format("embedded-opentype"), url("fonts/JandaManateeSolid.woff2") format("woff2"), url("fonts/JandaManateeSolid.woff") format("woff"), url("fonts/JandaManateeSolid.ttf") format("truetype"), url("fonts/JandaManateeSolid.svg#JandaManateeSolid") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.hero h1 {
+  font-family: "Janda Manatee Solid";
+  text-transform: uppercase;
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -298,7 +312,7 @@ body {
 
 /* SITE FOOTER */
 .site-footer {
-  background: rgb(23, 24, 27);
+  background: #24272A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,19 +331,43 @@ body {
 }
 
 section {
-  padding: 4em 0;
-  min-height: 101vh;
+  padding: 2em 0 0.5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+.section-title h1 {
+  font-family: "Janda Manatee Solid";
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: #24272A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+#explore {
+  background-color: #CDDE00;
+  border: 5px solid #24272A;
 }
 
 /* HERO SECTION */
 .hero {
-  background: rgb(23, 24, 27);
   text-align: center;
   padding: 8em 0 4em 0;
   min-height: 101vh;
@@ -349,6 +387,60 @@ section {
   margin: 1em auto;
 }
 
+/* ANIMATED BG */
+/* animated background */
+.site-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+}
+
+.animated-bg {
+  -webkit-animation: animatedGradient 10s ease infinite;
+          animation: animatedGradient 10s ease infinite;
+  background-size: 200%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#073b6f), color-stop(#0E5B98), color-stop(#1F8CD8), color-stop(#65B2E8), color-stop(#67B1E8), color-stop(#EF86CE), to(#EF86CE));
+  background: linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
+}
+
+@-webkit-keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (max-width: 767px) {
+  .animated-bg {
+    -webkit-animation: animatedGradient 10s ease infinite;
+            animation: animatedGradient 10s ease infinite;
+    background-size: 400%;
+  }
+}
 /* SITE NAV */
 .site-nav ul {
   margin: 0;
@@ -701,7 +793,7 @@ section {
 
 /* ANIMATE SECTION 2 ON SCROLL */
 #section2.scroll-triggered[data-sectionstate=inactive] {
-  background-color: rgb(23, 24, 27);
+  background-color: #24272A;
 }
 #section2.scroll-triggered[data-sectionstate=inactive] .contentblock-img {
   opacity: 0;

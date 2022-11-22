@@ -16,7 +16,7 @@
     .logomark {
         margin-right: 1em;
     }
-    
+
     a {
         color: #fff;
         text-decoration: none;
@@ -27,6 +27,7 @@
         margin: 0;
     }
 }
+
 /* SITE FOOTER */
 
 .site-footer {
@@ -46,16 +47,35 @@
 }
 
 section {
-    padding: 4em 0;
-    min-height: 101vh;
+    padding: 2em 0 .5em 0;
+    // min-height: 101vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    place-items: center;
+    // border: 5px solid #24272A;
+}
+
+.section-title h1 {
+    font-family: 'Janda Manatee Solid';
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: #24272A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+#explore {
+    background-color: #CDDE00;
+    border: 5px solid #24272A;
 }
 
 /* HERO SECTION */
 
 .hero {
-    background: $color-accent-dark;
+    // background: $color-accent-dark;
     text-align: center;
     padding: 8em 0 4em 0;
     min-height: 101vh;
@@ -70,5 +90,44 @@ section {
 
     p {
         margin: 1em auto;
+    }
+}
+
+/* ANIMATED BG */
+
+
+/* animated background */
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.animated-bg {
+    animation: animatedGradient 10s ease infinite;
+    background-size: 200%;
+    background: linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .animated-bg {
+        animation: animatedGradient 10s ease infinite;
+        background-size: 400%;
     }
 }
