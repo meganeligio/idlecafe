@@ -404,11 +404,9 @@ section {
 }
 
 .animated-bg {
-  -webkit-animation: animatedGradient 10s ease infinite;
-          animation: animatedGradient 10s ease infinite;
-  background-size: 200%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#073b6f), color-stop(#0E5B98), color-stop(#1F8CD8), color-stop(#65B2E8), color-stop(#67B1E8), color-stop(#EF86CE), to(#EF86CE));
-  background: linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
+  background-size: 100px, auto;
+  background-image: url(../img/grid-bg.png), -webkit-gradient(linear, left top, left bottom, from(#073b6f), color-stop(#0E5B98), color-stop(#1F8CD8), color-stop(#65B2E8), color-stop(#67B1E8), color-stop(#EF86CE), to(#EF86CE));
+  background-image: url(../img/grid-bg.png), linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
 }
 
 @-webkit-keyframes animatedGradient {
@@ -432,13 +430,6 @@ section {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-@media (max-width: 767px) {
-  .animated-bg {
-    -webkit-animation: animatedGradient 10s ease infinite;
-            animation: animatedGradient 10s ease infinite;
-    background-size: 400%;
   }
 }
 /* SITE NAV */

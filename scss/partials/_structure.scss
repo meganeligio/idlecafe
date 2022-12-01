@@ -106,9 +106,10 @@ section {
 }
 
 .animated-bg {
-    animation: animatedGradient 10s ease infinite;
-    background-size: 200%;
-    background: linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
+    // animation: animatedGradient 10s ease infinite;
+    // background-image: url(../img/grid-bg.png);
+    background-size: 100px, auto;
+    background-image: url(../img/grid-bg.png), linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
 }
 
 @keyframes animatedGradient {
@@ -127,7 +128,7 @@ section {
 
 @media (max-width: 767px) {
     .animated-bg {
-        animation: animatedGradient 10s ease infinite;
-        background-size: 400%;
+        // animation: animatedGradient 10s ease infinite;
+        // background-size: 400%;
     }
 }
