@@ -29,14 +29,31 @@
         &:nth-child(1) {
             animation-delay: 1s;
         }
+
         &:nth-child(2) {
             animation-delay: 1.5s;
         }
+
         &:nth-child(3) {
             animation-delay: 2s;
         }
     }
 
+}
+
+div.one-half.contentblock-img {
+    font-family: 'Janda Manatee Solid';
+    font-size: 1.5em;
+    background-color: #333;
+    padding: 2em;
+    border: 5px solid #CDDE00;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px #badf93;
+}
+
+div.one-half.contentblock-img a.button {
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes scaleup {
@@ -48,8 +65,8 @@
 
 /* ANIMATE SECTION 1 ON SCROLL */
 
-#section1.scroll-triggered[data-sectionstate="inactive"] {
-    
+#section1.scroll-triggered[data-sectionstate="active"] {
+
     .contentblock-img {
         opacity: 0;
         transform: translateX(-200px);
@@ -63,7 +80,7 @@
 }
 
 #section1.scroll-triggered[data-sectionstate="active"] {
-    
+
     .contentblock-img {
         opacity: 1;
         transform: translateX(0px);
@@ -81,7 +98,7 @@
 /* ANIMATE SECTION 2 ON SCROLL */
 
 #section2.scroll-triggered[data-sectionstate="inactive"] {
-    
+
     background-color: $color-accent-dark;
 
     .contentblock-img {
@@ -97,7 +114,7 @@
 }
 
 #section2.scroll-triggered[data-sectionstate="active"] {
-    
+
     background-color: #eee;
     transition: all 1s ease-out;
 
@@ -131,7 +148,7 @@
 }
 
 #section3.scroll-triggered[data-sectionstate="inactive"] {
-    
+
     .s-character {
         transform: translate(-50%, 50%);
     }
@@ -145,4 +162,104 @@
         transition: all 1s ease-out .5s;
     }
 
+}
+
+// credit: https://codepen.io/headquarter8302/pen/PoORrmY
+
+.splashscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 1;
+    z-index: 500;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    // -webkit-animation-name: fade-out;
+    animation-name: fade-out;
+    // -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    // -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    // -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    width: 500px;
+    height: 25px;
+    background: black;
+    border-radius: 6px;
+    border: 2px solid dimgray;
+    align-items: center;
+}
+
+@keyframes load {
+    from {
+        transform: translate(0, 0)
+    }
+
+    to {
+        transform: translate(390px, 0)
+    }
+}
+
+#bar {
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(to bottom right, cyan, lightblue);
+    border-radius: 6px;
+    box-shadow: 0 0 10px lightblue;
+
+    animation: load .25s infinite alternate ease-in-out;
+}
+
+@keyframes dots {
+    from {
+        color: cyan;
+        transform: translate(0, -10%);
+    }
+
+    to {
+        color: white;
+        transform: translate(0, 0);
+    }
+}
+
+.dot {
+    display: inline-block;
+    font-size: 250%;
+}
+
+.dot:nth-child(1) {
+    animation: dots .5s infinite alternate linear;
+}
+
+.dot:nth-child(2) {
+    animation: dots 1s infinite alternate linear;
+}
+
+.dot:nth-child(3) {
+    animation: dots 1.5s infinite alternate linear;
+}
+
+h1 sub {
+    margin-left: 5%;
+    font-size: 15%;
+    font-weight: normal;
 }

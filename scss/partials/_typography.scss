@@ -1,12 +1,32 @@
 /* BASE TEXT COLORS */
 
-body { color: $color-text-body; }
-h1, h2, h3, h4, h5, h6 { color: $color-text-headings; }
+body {
+    color: $color-text-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-text-headings;
+}
 
 /* BASE TEXT FONTS */
 
-body { font-family: $font-family-sans; }
-h1, h2, h3, h4, h5, h6 { font-family: $font-family-sans; }
+body {
+    font-family: $font-family-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-sans;
+}
 
 /* BASE TYPOGRAPHY */
 
@@ -15,23 +35,44 @@ body {
     line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6, p { margin: 0 0 .5em 0; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 .5em 0;
+}
 
 /* TRADITIONAL TYPOGRAPHIC SCALE */
 
 h1 {
+    font-family: 'Janda Manatee Solid';
     font-size: 3em;
     line-height: 1;
 }
 
 h2 {
+    font-family: 'Janda Manatee Solid';
+    color: #fff;
     font-size: 2.25em;
     line-height: 1.1;
+
 }
 
 h3 {
+    font-family: 'Janda Manatee Solid';
     font-size: 1.5em;
     line-height: 1.2;
+}
+
+h4 {
+    font-family: 'Janda Manatee Solid';
+    color: #CDDE00;
+    text-shadow: 0px 0px 8px #badf93;
+    font-size: 1.5em;
+    border: none;
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
@@ -81,6 +122,18 @@ hr {
     margin: 1em auto 3em auto;
 }
 
+.neon {
+    font-family: 'Janda Manatee Solid';
+    color: #CDDE00;
+    text-shadow: 0px 0px 8px #badf93;
+    font-size: 1.5em;
+    border: none;
+}
+
+.upcoming-heading {
+    padding: 3em 0 0 0;
+}
+
 /* FONT FACE */
 
 @font-face {
@@ -99,4 +152,27 @@ hr {
 .hero h1 {
     font-family: 'Janda Manatee Solid';
     text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'ShorelinesScriptBold';
+    src: url('fonts/ShorelinesScriptBold.eot');
+    src: url('fonts/ShorelinesScriptBold.eot') format('embedded-opentype'),
+        url('fonts/ShorelinesScriptBold.woff2') format('woff2'),
+        url('fonts/ShorelinesScriptBold.woff') format('woff'),
+        url('fonts/ShorelinesScriptBold.ttf') format('truetype'),
+        url('fonts/ShorelinesScriptBold.svg#ShorelinesScriptBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Signerica Fat';
+    src: url('fonts/SignericaFat.eot');
+    src: url('fonts/SignericaFat.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SignericaFat.woff2') format('woff2'),
+        url('fonts/SignericaFat.woff') format('woff'),
+        url('fonts/SignericaFat.ttf') format('truetype'),
+        url('fonts/SignericaFat.svg#SignericaFat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
