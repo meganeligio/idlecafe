@@ -14,13 +14,10 @@
 
 <body>
     <div class="splashscreen">
-        <!-- <h1>Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span><sub>infinitely
-                :)</sub></h1>
-        <div id="container">
-            <div id="bar"></div>
-        </div> -->
-        <!-- <div class="progress-bar" id="progress"> -->
-        <!-- <div class="progress-bar__percent" data-emoji="🍀"></div> -->
+        <h1>Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+            <div id="container">
+                <div id="bar"></div>
+            </div>
     </div>
     </div>
     <div class="site-wrapper animated-bg">
@@ -54,8 +51,12 @@
             <section class="hero">
                 <div class="blk-bg">
                     <div class="container">
-                        <div class="fumi-home">
-                            <img src="img/8bit/home-fumi.png" alt="fumi sitting on moon" width="300" height="300">
+                        <div>
+                            <img src="img/8bit/home-fumi.png" alt="fumi sitting on moon" width="300" height="300"
+                                class="fumi-home">
+
+                            <img src="img/8bit/cloud-home.png" alt="cloud with stars" width="300" height="300"
+                                class="cloud-home">
                         </div>
 
                         <h1>Game On</h1>
@@ -85,11 +86,11 @@
                     <div class="row">
                         <div class="one-half contentblock-img">
                             <img src="img/food/pizza.png" alt="Pizza">
-                            <a href="menu.html" class="button">Menu</a>
+                            <a href="menu.html" class="explore-button">Menu</a>
                         </div>
                         <div class="one-half contentblock-img">
                             <img src="img/merch/hat-white.png" alt="Pizza">
-                            <a href="merch.html" class="button">Merch</a>
+                            <a href="merch.html" class="explore-button">Merch</a>
                         </div>
                     </div>
                 </div>
@@ -117,15 +118,15 @@
                 <div class="container">
                     <div class="section-title">
                         <h2 class="upcoming-heading">upcoming <span class="neon">RPG</span> games</h2>
-                        <p class="text-centered">available for pre-order on 11/07</p>
+                        <p class="rpg-preorder">available for pre-order on 11/07</p>
                     </div>
                 </div>
             </section>
 
             <section id="section3" class="scroll-triggered">
-                <div class="container">
-                    <div class="row align-top">
-                        <div class="one-third column">
+                <div class="rpg-container">
+                    <div class="rpg row align-top">
+                        <div class="one-third column ">
                             <img src="img/rpg/moonlit-valley.jpg" alt="moonlit valley" width="500" height="500">
                             <h3 class="rpg-titles">Moonlit Valley</h3>
                             <p class="rpg-desc">find a place to settle down and relax</p>
@@ -147,9 +148,12 @@
     </div><!-- END OF ANIMATED BG -->
 
     <footer class="site-footer">
+
         <div class="footer-container">
+
             <div class="row align-top">
-                <div class="one-half column">
+
+                <div class="one-fifth column hours">
                     <h4>Hours</h4>
                     <p>MONDAY &ndash; FRIDAY <br />
                         10:00 AM &ndash; 7:00 PM</p>
@@ -158,26 +162,26 @@
                     <p>HOLIDAYS <br />
                         CLOSED ALL DAY</p>
                 </div>
-                <div class="one-half column">
+
+                <div class="one-fifth column">
                     <h4>Location</h4>
-                    <img src="img/locations/location-one.gif" alt="California Location" width="214" height="110">
-                    <p>11901 Santa Monica Blvd Ste 204,<br />
+                    <img src="img/locations/location-one.gif" alt="California Location" width="222" height="118"
+                        class="location-one-img">
+                    <p class="location-text">11901 Santa Monica Blvd Ste 204,<br />
                         Los Angeles, CA 90025</p>
-                    <img src="img/locations/location-two.gif" alt="UK Location" width="214" height="110">
-                    <p>24 Commercial St, Sheffield City Centre,<br />
+                    <img src="img/locations/location-two.gif" alt="UK Location" width="222" height="118"
+                        class="location-two-img">
+                    <p class="location-text">24 Commercial St, Sheffield City Centre,<br />
                         Sheffield S1 2AT, United Kingdom</p>
                 </div>
-            </div>
-        </div>
-        <div class="footer-container">
-            <div class="row align-top">
-                <div class="one-third column">
-                    <p><a href="subpage1/index.html">About Us</a></p>
-                    <p><a href="subpage2/index.html">Menu</a></p>
-                    <p><a href="subpage3/index.html">Shop</a></p>
+
+                <div class="one-fifth column">
+                    <p class="nav-text"><a href="subpage1/index.html">About Us</a></p>
+                    <p class="nav-text"><a href="subpage2/index.html">Menu</a></p>
+                    <p class="nav-text"><a href="subpage3/index.html">Shop</a></p>
                 </div>
 
-                <div class="one-third column">
+                <div class="one-fifth column">
                     <ul class="icons">
                         <li><a href="#" class="fab fa-twitter" aria-hidden="true"></a>
                         </li>
@@ -187,12 +191,17 @@
                     </ul>
                     <img src="img/8bit/vira.png" alt="vira">
                 </div>
-                <div class="one-third column footer-logo">
+
+                <div class="one-fifth column footer-logo">
                     <img src="img/logo.svg" alt="logo">
                     <p class="footer-copy">&copy; 2022 IDLE GAMING CAFE</p>
                 </div>
+
             </div>
         </div>
+
+
+
         <!-- <nav class="site-nav">
                 <ul>
                     <li><a href="subpage1/index.html">About Us</a></li>

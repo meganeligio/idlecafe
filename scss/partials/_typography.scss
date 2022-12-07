@@ -48,31 +48,35 @@ p {
 /* TRADITIONAL TYPOGRAPHIC SCALE */
 
 h1 {
-    font-family: 'Janda Manatee Solid';
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     font-size: 3em;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-family: 'Janda Manatee Solid';
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 2.25em;
     line-height: 1.1;
+    text-transform: uppercase;
 
 }
 
 h3 {
-    font-family: 'Janda Manatee Solid';
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.2;
+    text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Janda Manatee Solid';
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     color: #CDDE00;
-    text-shadow: 0px 0px 8px #badf93;
+    text-shadow: 0px 0px 8px #EAF5DE;
     font-size: 1.5em;
     border: none;
+    text-transform: uppercase;
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
@@ -123,15 +127,15 @@ hr {
 }
 
 .neon {
-    font-family: 'Janda Manatee Solid';
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     color: #CDDE00;
     text-shadow: 0px 0px 8px #badf93;
-    font-size: 1.5em;
     border: none;
 }
 
 .upcoming-heading {
     padding: 3em 0 0 0;
+    text-transform: uppercase;
 }
 
 /* FONT FACE */

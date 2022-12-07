@@ -43,7 +43,6 @@
 }
 
 .footer-container {
-    width: 1000px;
     margin: 0 auto;
     padding: 5em;
     display: flex;
@@ -55,7 +54,6 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    // padding-right: 1em;
 }
 
 .site-footer {
@@ -71,10 +69,35 @@
     }
 }
 
+.hours p {
+    font-size: .90em;
+}
+
+.nav-text {
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.location-text {
+    max-width: 8800px;
+    font-size: .65em;
+    font-style: italic;
+    margin-top: .2em;
+}
+
+.location-one-img {
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.location-two-img {
+    border-radius: 8px;
+    margin-top: .8em;
+}
+
 /* HERO SECTION */
 
 .hero {
-    // background: $color-accent-dark;
     text-align: center;
     padding: 8em 0 4em 0;
     min-height: 101vh;
@@ -113,13 +136,12 @@
     background-color: #24272A;
     width: 1200px;
     height: 500px;
-    border: 5px solid #CDDE00;
+    border: 6px solid #CDDE00;
     box-shadow: 0px 0px 10px #badf93;
     z-index: 100;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-    border: 3px solid red;
 }
 
 .blk-bg .container {
@@ -132,24 +154,20 @@ i {
     font-weight: bold;
 }
 
-.button-text {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.fumi-home img {
-    width: 25%;
-    margin: 3em;
-}
-
 .fumi-home {
     position: absolute;
-    top: 80px;
-    right: 0;
-    width: 800;
-    height: 100;
-    border: 3px solid orange;
+    top: 275px;
+    left: -80px;
+    width: 1000;
+    height: 300;
+}
 
+.cloud-home {
+    position: absolute;
+    top: 35px;
+    right: -40px;
+    width: 1000;
+    height: 300;
 }
 
 /* SECTIONS */
@@ -182,17 +200,33 @@ section {
 
 /* RPG SECTION */
 
+.rpg-container {
+    width: 1000px;
+}
+
+.rpg img {
+    border-radius: 8px;
+    margin-right: 3em;
+}
+
 .rpg-titles {
     color: #CDDE00;
     font-size: 1.1em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    margin-top: .5em;
     margin-bottom: .1em;
 }
 
 .rpg-desc {
     color: rgb(255 255 255 / 1);
     font-size: .90em;
+}
+
+.rpg-preorder {
+    color: #EAF5DE;
+    text-align: center;
+    margin-top: 1em
 }
 
 /* ANIMATED BG */

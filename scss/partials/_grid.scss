@@ -62,6 +62,10 @@ $gridgap: 4%;
             width: 75% - $gridgap;
         }
 
+        .one-fifth {
+            width: 20% - $gridgap;
+        }
+
         .push-one-fourth {
             margin-left: 25% + ($gridgap / 2);
         }
