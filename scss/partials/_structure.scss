@@ -20,8 +20,9 @@
     }
 
     a {
-        color: #fff;
+        color: $color-accent;
         text-decoration: none;
+        cursor: grab;
     }
 
     h1 {
@@ -32,67 +33,130 @@
 
 /* SITE FOOTER */
 
-.footer-logo img {
-    width: 15%;
-    padding-top: 4%;
-    display: flex;
-}
-
-.footer-copy {
-    font-size: .5em;
-}
-
-.footer-container {
-    margin: 0 auto;
-    padding: 5em;
-    display: flex;
-    align-items: flex-start;
-    border: 3px solid red;
-}
-
-.icons {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
 .site-footer {
     background: $color-accent-dark;
     display: flex;
     justify-content: center;
-    padding: .5em;
+    padding: 4.5em;
     color: $color-accent;
 
     a {
-        color: #fff;
+        color: $color-accent;
         text-decoration: none;
     }
 }
 
-.hours p {
-    font-size: .90em;
+// PIXEL TRANSITION
+
+.pixel-transition {
+    background-image: url(/img/pixel-footer.png);
+    background-color: #ef86ce1a;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1.5em 1.5em .65em 1.5em;
 }
 
-.nav-text {
-    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+// FOOTER HOURS
+
+.hours h4 {
+    margin-bottom: 1em;
+    letter-spacing: .03em;
+}
+
+.hours p {
+    font-size: .85em;
+    margin-bottom: 1em;
+}
+
+.hours-bold {
+    font-size: 1.2em;
+}
+
+// FOOTER LOCATIONS
+
+.locations h4 {
+    margin-bottom: 1em;
+    letter-spacing: .03em;
 }
 
 .location-text {
-    max-width: 8800px;
+    max-width: 800px;
     font-size: .65em;
     font-style: italic;
-    margin-top: .2em;
 }
 
 .location-one-img {
     border-radius: 8px;
-    margin-top: 1em;
 }
 
 .location-two-img {
     border-radius: 8px;
     margin-top: .8em;
+}
+
+// ABOUT & MENU & SHOP
+
+.nav-text {
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+    letter-spacing: .03em;
+}
+
+.nav-text a:hover {
+    color: #FF9015;
+    cursor: grab;
+}
+
+.footer-nav {
+    padding-left: 2em;
+}
+
+// FOOTER ICONS
+
+.icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-right: 1.5em;
+}
+
+.icons li {
+    padding-right: 1em;
+}
+
+.fab {
+    display: inline-block;
+    font-size: 30px;
+    top: 0;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    cursor: grab;
+}
+
+// FOOTER LOGO 
+
+.footer-logo {
+    display: flex;
+    margin-top: .7em;
+}
+
+.footer-logo img {
+    width: 25%;
+    display: flex;
+}
+
+.logo-text {
+    font-size: .6em;
+    margin-top: .4em;
+    padding-left: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* HERO SECTION */
@@ -119,9 +183,11 @@
     overflow-x: hidden;
 }
 
+// BLACK RECT
+
 .blk-bg h1 {
     font-size: 5.5em;
-    color: #EAF5DE;
+    color: $color-accent;
     text-shadow: 0px 0px 10px #EAF5DE;
     letter-spacing: .1em;
 }
@@ -133,11 +199,11 @@
 
 .blk-bg {
     position: relative;
-    background-color: #24272A;
+    background-color: $color-accent-dark;
     width: 1200px;
     height: 500px;
-    border: 6px solid #CDDE00;
-    box-shadow: 0px 0px 10px #badf93;
+    border: 8px solid #CDDE00;
+    box-shadow: 0px 0px 8px #CDDE00;
     z-index: 100;
     display: block;
     margin: 0 auto;
@@ -147,11 +213,6 @@
 .blk-bg .container {
     padding-top: 5.5em;
     display: block;
-}
-
-i {
-    color: #CDDE00;
-    font-weight: bold;
 }
 
 .fumi-home {
@@ -174,45 +235,99 @@ i {
 
 section {
     padding: 2em 0 .5em 0;
-    // min-height: 101vh;
     display: flex;
     align-items: center;
     justify-content: center;
     place-items: center;
-    // border: 5px solid #24272A;
 }
 
-.section-title h1 {
-    font-family: 'Janda Manatee Solid';
-    font-size: xx-large;
+// EXPLORE SECTION
+
+.explore-title h1 {
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
+    font-size: 3em;
     text-transform: uppercase;
-    color: #24272A;
+    color: $color-accent-dark;
     display: flex;
     align-items: center;
     justify-content: center;
     place-items: center;
+    letter-spacing: .03em;
 }
 
 #explore {
     background-color: #CDDE00;
-    border: 5px solid #24272A;
+    border-bottom: 10px solid #24272A;
 }
 
-/* RPG SECTION */
+#main-border {
+    background-color: #24272a25;
+    border-radius: 8px 8px 0px 0px;
+    border: 10px solid #24272A;
+}
+
+.pizzablock-img {
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;   
+    font-size: 1.5em;
+    text-align: center;
+    background-color: $color-accent-dark;
+    padding: 2em;
+    border: 8px solid #CDDE00;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px #CDDE00;
+    letter-spacing: .03em;
+
+    &:hover {
+        border: 8px solid #EF86CE;
+        box-shadow: 0px 0px 8px #EF86CE;
+        cursor: grab;
+    }
+}
+
+.merchblock-img {
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;   
+    font-size: 1.5em;
+    text-align: center;
+    background-color: $color-accent-dark;
+    padding: 2em;
+    border: 8px solid #CDDE00;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px #CDDE00;
+    letter-spacing: .03em;
+
+    &:hover {
+            border: 8px solid #65B2E8;
+            box-shadow: 0px 0px 8px #65B2E8;
+            cursor: grab;
+        }
+}
+
+.explore-options {
+    margin-top: 1em;
+}
+
+// RPG SECTION
+
+.rpg-column {
+    margin-top: .2em;
+    padding: 1em;
+}
 
 .rpg-container {
-    width: 1000px;
+    width: 1200px;
+    margin-bottom: 7em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .rpg img {
     border-radius: 8px;
-    margin-right: 3em;
 }
 
 .rpg-titles {
     color: #CDDE00;
     font-size: 1.1em;
-    letter-spacing: .1em;
+    letter-spacing: .03em;
     text-transform: uppercase;
     margin-top: .5em;
     margin-bottom: .1em;
@@ -231,6 +346,9 @@ section {
 
 /* ANIMATED BG */
 
+// .stars {
+    // background-image: url(/img/stars.png);
+
 .site-wrapper {
     display: flex;
     flex-direction: column;
@@ -239,10 +357,9 @@ section {
 }
 
 .animated-bg {
-    // animation: animatedGradient 10s ease infinite;
-    // background-image: url(../img/grid-bg.png);
     background-size: 100px, auto;
-    background-image: url(../img/grid-bg.png), linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
+    background-image: url(/img/grid-bg.png),
+    linear-gradient(180deg, #073b6f, #0E5B98, #1F8CD8, #65B2E8, #67B1E8, #EF86CE, #EF86CE);
 }
 
 @keyframes animatedGradient {
@@ -256,12 +373,5 @@ section {
 
     100% {
         background-position: 0% 50%;
-    }
-}
-
-@media (max-width: 767px) {
-    .animated-bg {
-        // animation: animatedGradient 10s ease infinite;
-        // background-size: 400%;
     }
 }

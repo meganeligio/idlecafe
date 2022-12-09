@@ -12,18 +12,31 @@ body {
     padding: 0 1em;
 }
 
+.rpg-container {
+    width: 1000px;
+    margin-bottom: 7em;
+    display: flex;
+    justify-content: space-between;
+}
+
 /* MEDIA QUERIES */
 
 /* RESPONSIVE TYPE */
 
 // SMALL
 
-body { font-size: 87.5%; }
+body {
+    font-size: 87.5%;
+}
 
 @media (min-width: $breakpoint-small) {
-    body { font-size: 100%; }
+    body {
+        font-size: 100%;
+    }
 }
 
 @media (min-width: $breakpoint-large) {
-    body { font-size: 112.5%; }
+    body {
+        font-size: 112.5%;
+    }
 }

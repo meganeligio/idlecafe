@@ -4,12 +4,7 @@ body {
     color: $color-text-body;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: $color-text-headings;
 }
 
@@ -19,12 +14,7 @@ body {
     font-family: $font-family-sans;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-sans;
 }
 
@@ -35,13 +25,7 @@ body {
     line-height: 1.4;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0 0 .5em 0;
 }
 
@@ -73,10 +57,15 @@ h3 {
 h4 {
     font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     color: #CDDE00;
-    text-shadow: 0px 0px 8px #EAF5DE;
+    text-shadow: 0px 0px 8px #CDDE00;
     font-size: 1.5em;
     border: none;
     text-transform: uppercase;
+}
+
+i {
+    color: #CDDE00;
+    font-weight: bold;
 }
 
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
@@ -114,28 +103,29 @@ hr {
 
 /* SECTION HEADING */
 
-.section-heading {
-    font-size: 1em;
-    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    border-bottom: 5px solid $color-accent;
-    display: table;
-    padding: 0 0 .5em 0;
-    margin: 1em auto 3em auto;
-}
+// .section-heading {
+//     font-size: 1em;
+//     font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+//     font-weight: normal;
+//     text-transform: uppercase;
+//     letter-spacing: .06em;
+//     border-bottom: 5px solid $color-accent;
+//     display: table;
+//     padding: 0 0 .5em 0;
+//     margin: 1em auto 3em auto;
+// }
 
 .neon {
     font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     color: #CDDE00;
-    text-shadow: 0px 0px 8px #badf93;
+    text-shadow: 0px 0px 8px #CDDE00;
     border: none;
 }
 
 .upcoming-heading {
     padding: 3em 0 0 0;
     text-transform: uppercase;
+    letter-spacing: .03em;
 }
 
 /* FONT FACE */
