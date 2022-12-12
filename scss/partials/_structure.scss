@@ -109,6 +109,11 @@
     cursor: grab;
 }
 
+.nav-glow {
+    color: #FF9015;
+    text-shadow: 0px 0px 8px #FF9015;
+}
+
 .footer-nav {
     padding-left: 2em;
 }
@@ -194,7 +199,7 @@
 
 .blk-bg p {
     margin-top: -1.5em;
-    font-size: .90em;
+    font-size: .85em;
 }
 
 .blk-bg {
@@ -208,6 +213,11 @@
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+
+}
+
+.about-blk-bg {
+    height: 600px;
 }
 
 .blk-bg .container {
@@ -215,7 +225,13 @@
     display: block;
 }
 
-.fumi-home {
+.about-text {
+    padding-left: 1.5em;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.char-home {
     position: absolute;
     top: 275px;
     left: -80px;
@@ -229,6 +245,23 @@
     right: -40px;
     width: 1000;
     height: 300;
+}
+
+.game-logos {
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.game-logos li {
+    border: 2px solid red;
+    display: inline-block;
+    width: 30%;
+    top: 0;
+    align-items: flex-start;
+    margin: 0;
+    padding: 2em;
 }
 
 /* SECTIONS */
@@ -313,13 +346,6 @@ section {
     padding: 1em;
 }
 
-.rpg-container {
-    width: 1200px;
-    margin-bottom: 7em;
-    display: flex;
-    justify-content: space-between;
-}
-
 .rpg img {
     border-radius: 8px;
 }
@@ -334,7 +360,7 @@ section {
 }
 
 .rpg-desc {
-    color: rgb(255 255 255 / 1);
+    color: $color-accent;
     font-size: .90em;
 }
 
@@ -344,10 +370,209 @@ section {
     margin-top: 1em
 }
 
-/* ANIMATED BG */
+// PROFILE
 
-// .stars {
-    // background-image: url(/img/stars.png);
+.profile-blk-bg {
+    height: 300px;
+}
+
+.profile-blk-bg p {
+    display: block;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-text {
+    text-align: center;
+    max-width: 530px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.staff-column {
+    margin-top: .2em;
+    padding: 1em;
+}
+
+.staff img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-titles {
+    color: $color-accent;
+    font-size: 1.1em;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin-top: .5em;
+    margin-bottom: .1em;
+    text-align: center;
+}
+
+.staff-desc {
+    color: $color-accent;
+    font-size: .90em;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+// MENU
+
+.health-i {
+    color: #EF86CE;
+}
+
+.stamina-i {
+    color: #65B2E8;
+}
+
+.idle-cafe-cursive {
+    padding: 2.5em;
+}
+
+.menu-blk {
+    height: 2000px;
+    margin-bottom: 7em;
+}
+
+.menu-blk h1 {
+    color: #CDDE00;
+    text-shadow: 0px 0px 8px #CDDE00;
+    padding-top: 1.5em;
+}
+
+.menu-blk p {
+    max-width: 25em;
+}
+
+.yuyi {
+    position: absolute;
+    padding: 4em;
+    top: 40px;
+    right: 360px;
+    width: 400;
+    height: 300;
+    z-index: 300;
+}
+
+// SHOP
+
+.slots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+}
+
+.slots img {
+    width: 10%;
+}
+
+.merch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.merch img {
+    border-radius: 8px;
+    border: 8px solid #CDDE00;
+    box-shadow: 0px 0px 8px #CDDE00;
+    margin: 0 auto;
+}
+
+.merch nav {
+    margin: 100px auto; 
+    text-align: center;
+}
+
+.merch nav ul ul {
+    display: none;
+}
+  
+.merch nav ul li:hover > ul {
+    display: block;
+}
+  
+.merch nav ul li {
+    float: left;
+    width: 500px;
+    text-align: left;
+    border-bottom: 3px solid #2ecc71; 
+}
+
+.merch nav ul li:hover {
+    background: #f2f2f2;
+}
+
+.merch nav ul li a {
+    display: block; 
+    padding: 15px 10px;
+    color: #2a2a2a; 
+    text-decoration: none;
+}
+        
+.merch nav ul ul {
+    border-radius: 0px; 
+    padding: 0;
+    position: absolute; 
+    top: 100%;
+}
+
+.merch nav ul ul li {
+    float: none;
+    border-bottom: 2px solid #eaeaea; 
+    position: relative;
+}
+
+.merch nav ul ul li a {
+    padding: 15px 10px;
+    color: #838383;
+} 
+
+.merch nav ul ul li a:hover {
+    background: #47d583;
+    color: #fff;
+} 
+
+#down-triangle {
+    float: right;
+    width: 0; 
+    height: 0;
+    margin-top: 10px;
+    border-top: 10px solid #2ecc71;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+}
+
+.circle {
+    float: right;
+    display: inline;
+    width: 10px;
+    height: 10px; 
+    margin-top: 5px;
+    border: 3px solid #8ce5b2;
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+}
+
+.merch nav {
+    margin-left: 0;
+    padding-left: 0;
+    width: 500px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+/* ANIMATED BG */
 
 .site-wrapper {
     display: flex;
