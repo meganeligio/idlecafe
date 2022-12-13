@@ -864,8 +864,18 @@ section {
   padding: 2.5em;
 }
 
+.yuyi {
+  position: absolute;
+  padding: 4em;
+  top: 40px;
+  right: 360px;
+  width: 400;
+  height: 300;
+  z-index: 300;
+}
+
 .menu-blk {
-  height: 2000px;
+  height: 5000px;
   margin-bottom: 7em;
 }
 
@@ -879,16 +889,108 @@ section {
   max-width: 25em;
 }
 
-.yuyi {
+.burger {
   position: absolute;
-  padding: 4em;
-  top: 40px;
-  right: 360px;
-  width: 400;
-  height: 300;
-  z-index: 300;
+  width: 8%;
+  top: 2870px;
+  left: 395px;
 }
 
+.bit-fries {
+  position: absolute;
+  width: 8%;
+  top: 2900px;
+  left: 480px;
+}
+
+.milkshake {
+  position: absolute;
+  width: 15%;
+  bottom: 100px;
+  right: 40px;
+}
+
+.waffles {
+  position: absolute;
+  width: 15%;
+  top: 1120px;
+}
+
+.philly {
+  position: absolute;
+  width: 15%;
+  bottom: 500px;
+  right: 40px;
+}
+
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+
+.menu-section {
+  margin-bottom: 80px;
+}
+
+.menu-section h4 {
+  text-align: left;
+  color: #EAF5DE;
+  text-shadow: 0px 0px 8px #EAF5DE;
+  padding-top: 0.5em;
+}
+
+.menu-section-title {
+  font-family: "Janda Manatee Solid", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #FF9015;
+  text-shadow: 0px 0px 8px #FF9015;
+  display: block;
+  font-weight: normal;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name {
+  color: #CDDE00;
+  font-family: helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px dotted #EAF5DE;
+  text-align: left;
+}
+
+.menu-item-description {
+  color: #EAF5DE;
+  font-style: italic;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  max-width: 40em;
+  text-align: left;
+}
+
+.menu-item-price {
+  color: #CDDE00;
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -26px;
+}
+
+.fries {
+  font-family: Avenir Next, Arial, Helvetica, sans-serif;
+  font-size: 0.3em;
+  text-shadow: none;
+  color: #FF9015;
+}
+
+/** Source: http://wordpressaholic.com/restaurant-menu-html-and-css-tutorial/ **/
 .slots {
   display: -webkit-box;
   display: -ms-flexbox;
