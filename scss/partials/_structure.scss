@@ -283,7 +283,7 @@ section {
 }
 
 .pizzablock-img {
-    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;   
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: center;
     background-color: $color-accent-dark;
@@ -301,7 +301,7 @@ section {
 }
 
 .merchblock-img {
-    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;   
+    font-family: 'Janda Manatee Solid', Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: center;
     background-color: $color-accent-dark;
@@ -315,7 +315,7 @@ section {
         border: 8px solid #65B2E8;
         box-shadow: 0px 0px 8px #65B2E8;
         cursor: grab;
-        }
+    }
 }
 
 .explore-options {
@@ -517,8 +517,8 @@ section {
     margin: 0 auto;
     display: block;
     color: rgb(92, 92, 92);
-  }
-  
+}
+
 .menu-section {
     margin-bottom: 80px;
 }
@@ -536,8 +536,8 @@ section {
     color: #FF9015;
     text-shadow: 0px 0px 8px #FF9015;
     display: block;
-    font-weight:normal;
-    margin: 20px 0; 
+    font-weight: normal;
+    margin: 20px 0;
     text-align: left;
 }
 
@@ -546,7 +546,7 @@ section {
     font-size: 18px;
 }
 
-.menu-item-name{
+.menu-item-name {
     color: #CDDE00;
     font-family: helvetica;
     font-weight: bold;
@@ -564,7 +564,7 @@ section {
     text-align: left;
 }
 
-.menu-item-price{
+.menu-item-price {
     color: #CDDE00;
     float: right;
     font-weight: bold;
@@ -580,7 +580,7 @@ section {
     text-shadow: none;
     color: #FF9015;
 }
-  
+
 // SHOP
 
 .slots {
@@ -624,13 +624,120 @@ section {
     border-radius: 8px;
 }
 
-.merch h3::after {
-    content:'✦';
-}
+// .merch h3::after {
+//     content: '✦';
+// }
 
 .merch img {
     border-radius: 8px;
     border: 8px solid #CDDE00;
     box-shadow: 0px 0px 8px #CDDE00;
     margin: 0 auto;
+}
+
+details {
+    box-sizing: border-box;
+    // border-top: 1px solid rgba(0, 0, 0, 0.2);
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    // border-left: 1px solid rgba(0, 0, 0, 0.2);
+    // border-right: 1px solid rgba(0, 0, 0, 0.2);
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
+details+details {
+    border-top-width: 0px;
+}
+
+details[open] {
+    transition: all 0.4s ease-out;
+    padding-bottom: 0.5em;
+}
+
+details[open] summary~* {
+    animation: details-fade-trans 0.4s ease-out;
+}
+
+@keyframes details-fade-trans {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+summary {
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    padding: 0em 3em 0em 0em;
+    position: relative;
+}
+
+.list-blk {
+    background-color: #24272A;
+    // width: 273px;
+    list-style: none;
+    display: block;
+    align-items: flex-start;
+    color: #EAF5DE;
+    // padding: 1em 2em 1em 1em;
+}
+
+details ul li {
+    font-family: $font-family-sans;
+}
+
+summary:focus {
+    /* KEEP DEFAULT */
+}
+
+details *:not(summary) {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+summary::-moz-list-bullet {
+    list-style-type: none;
+    display: block;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+    color: red;
+}
+
+summary::before {
+    position: absolute;
+    right: 1.5em;
+    transition: all 0.2s ease-out;
+
+    /* Arrow Version */
+    // border-right: 2px solid;
+    // border-bottom: 2px solid;
+    content: "✦";
+    width: 8px;
+    height: 8px;
+    top: 0.1em;
+    right: -1em;
+    // transform: rotate(45deg) translate(-4px, -4px);
+
+    /* Plus Minus Version   */
+    /*   content: "+"; */
+}
+
+details[open] summary {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+details[open] summary::before {
+    /* Arrow Version   */
+    // transform: rotate(225deg);
 }
